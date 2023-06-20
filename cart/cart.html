@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                },
+                fontFamily: {
+                    poppins: ['Poppins', 'sans-serif'],
+                    Montserrat: ['Montserrat', 'sans-serif']
+                },
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&display=swap" rel="stylesheet">
+    <title>
+        Cart
+    </title>
+</head>
+
+<body class="dark:bg-gray-600">
+    <section class="pt-12 pb-24 bg-blueGray-100">
+        <div class="container px-4 mx-auto">
+            <ul class="flex flex-wrap items-center mb-10 xl:mb-0">
+                <li class="mr-6">
+                    <a class="flex items-center text-sm font-medium text-gray-400 hover:text-gray-500" href="#">
+                        <span>Home</span>
+                        <svg class="ml-6" width="4" height="7" viewbox="0 0 4 7" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.150291 0.898704C-0.0500975 0.692525 -0.0500975 0.359292 0.150291 0.154634C0.35068 -0.0507836 0.674443 -0.0523053 0.874831 0.154634L3.7386 3.12787C3.93899 3.33329 3.93899 3.66576 3.7386 3.8727L0.874832 6.84594C0.675191 7.05135 0.35068 7.05135 0.150292 6.84594C-0.0500972 6.63976 -0.0500972 6.30652 0.150292 6.10187L2.49888 3.49914L0.150291 0.898704Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mr-6">
+                    <a class="flex items-center text-sm font-medium text-gray-400 hover:text-gray-500" href="#">
+                        <span>Store</span>
+                        <svg class="ml-6" width="4" height="7" viewbox="0 0 4 7" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.150291 0.898704C-0.0500975 0.692525 -0.0500975 0.359292 0.150291 0.154634C0.35068 -0.0507836 0.674443 -0.0523053 0.874831 0.154634L3.7386 3.12787C3.93899 3.33329 3.93899 3.66576 3.7386 3.8727L0.874832 6.84594C0.675191 7.05135 0.35068 7.05135 0.150292 6.84594C-0.0500972 6.63976 -0.0500972 6.30652 0.150292 6.10187L2.49888 3.49914L0.150291 0.898704Z"
+                                fill="currentColor"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li><a class="text-sm font-medium text-indigo-500 hover:text-indigo-600" href="#">Your cart</a></li>
+            </ul>
+            <div class="text-center border-b border-black pb-9 mb-7 border-opacity-5">
+                <h2 class="font-medium leading-normal text-center text-9xl xl:text-10xl font-heading">Your cart</h2>
+            </div>
+            <div class="px-8 py-12 bg-white md:px-12 mb-14 xl:mb-9 rounded-3xl">
+                <span class="inline-block mb-16 font-medium text-darkBlueGray-300">3 products</span>
+                <div class="lg:px-10">
+                    <div
+                        class="relative flex flex-wrap items-center pb-8 mb-8 -mx-4 border-b border-gray-200 border-opacity-40">
+                        <div class="relative w-full px-4 mb-6 md:w-auto md:pr-10 md:mb-0">
+                            <a class="block mx-auto max-w-max" href="#">
+                                <img class="object-cover w-24"
+                                    src="uinel-assets/images/ecommerce-product-info/phone01.png" alt="">
+                            </a>
+                        </div>
+                        <div class="w-full px-4 mb-6 md:w-auto lg:mb-0">
+                            <a class="block mb-5 text-xl font-medium font-heading hover:underline" href="#">Apple iPhone
+                                12 Pro (128GB)</a>
+                            <div class="flex flex-wrap">
+                                <p class="mr-4 text-sm font-medium">
+                                    <span class="font-heading">Color:</span>
+                                    <span class="ml-2 text-gray-400">Silver</span>
+                                </p>
+                                <p class="text-sm font-medium">
+                                    <span>Memory storage:</span>
+                                    <span class="ml-2 text-gray-400">128GB</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full px-4 ml-auto md:w-1/2 lg:w-auto">
+                            <div class="inline-flex items-center w-full mb-4 md:w-auto md:mb-0 md:mr-10">
+                                <h4 class="mr-4 font-medium font-heading">Qty:</h4>
+                                <input
+                                    class="w-16 px-3 py-2 text-center text-gray-400 placeholder-gray-400 border-2 border-blue-400 outline-none bg-blue-50 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+                                    type="text" placeholder="1">
+                            </div>
+                            <span class="text-xl font-medium text-blue-500 font-heading">
+                                <span class="text-sm">$</span>
+                                <span>544.90</span>
+                            </span>
+                        </div>
+                        <button class="absolute top-0 right-0 text-gray-200 lg:mt-2 lg:-mr-4 hover:text-gray-300">
+                            <svg width="28" height="28" viewbox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="currentColor"></rect>
+                                <line x1="20.495" y1="8.49497" x2="8.49498" y2="20.495" stroke="currentColor"
+                                    stroke-width="1.4"></line>
+                                <line x1="19.505" y1="20.495" x2="7.50503" y2="8.49498" stroke="currentColor"
+                                    stroke-width="1.4"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div
+                        class="relative flex flex-wrap items-center pb-8 mb-8 -mx-4 border-b border-gray-200 border-opacity-40">
+                        <div class="relative w-full px-4 mb-6 md:w-auto md:pr-10 md:mb-0">
+                            <a class="block mx-auto max-w-max" href="#">
+                                <img class="object-cover w-24"
+                                    src="uinel-assets/images/ecommerce-product-info/headphones.png" alt="">
+                            </a>
+                        </div>
+                        <div class="w-full px-4 mb-6 md:w-auto lg:mb-0">
+                            <a class="block mb-5 text-xl font-medium font-heading hover:underline" href="#">Headphones
+                                SONY 1l X-O</a>
+                            <div class="flex flex-wrap">
+                                <p class="mr-4 text-sm font-medium">
+                                    <span class="font-heading">Color:</span>
+                                    <span class="ml-2 text-gray-400">Grey</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full px-4 ml-auto md:w-1/2 lg:w-auto">
+                            <div class="inline-flex items-center w-full mb-4 md:w-auto md:mb-0 md:mr-10">
+                                <h4 class="mr-4 font-medium font-heading">Qty:</h4>
+                                <input
+                                    class="w-16 px-3 py-2 text-center text-gray-400 placeholder-gray-400 border-2 border-blue-400 outline-none bg-blue-50 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+                                    type="text" placeholder="1">
+                            </div>
+                            <span class="text-xl font-medium text-blue-500 font-heading">
+                                <span class="text-sm">$</span>
+                                <span>44.90</span>
+                            </span>
+                        </div>
+                        <button class="absolute top-0 right-0 text-gray-200 lg:mt-2 lg:-mr-4 hover:text-gray-300">
+                            <svg width="28" height="28" viewbox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="currentColor"></rect>
+                                <line x1="20.495" y1="8.49497" x2="8.49498" y2="20.495" stroke="currentColor"
+                                    stroke-width="1.4"></line>
+                                <line x1="19.505" y1="20.495" x2="7.50503" y2="8.49498" stroke="currentColor"
+                                    stroke-width="1.4"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="relative flex flex-wrap items-center -mx-4">
+                        <div class="relative w-full px-4 mb-6 md:w-auto md:pr-10 md:mb-0">
+                            <a class="block mx-auto max-w-max" href="#">
+                                <img class="object-cover w-24"
+                                    src="uinel-assets/images/ecommerce-product-info/smartwatch.png" alt="">
+                            </a>
+                        </div>
+                        <div class="w-full px-4 md:w-auto">
+                            <a class="block mb-5 text-xl font-medium font-heading hover:underline" href="#">Smartwatch
+                                Uistore Watch 19</a>
+                            <div class="flex flex-wrap">
+                                <p class="mr-4 text-sm font-medium">
+                                    <span class="font-heading">Color:</span>
+                                    <span class="ml-2 text-gray-400">Green</span>
+                                </p>
+                                <p class="text-sm font-medium">
+                                    <span>Size:</span>
+                                    <span class="ml-2 text-gray-400">M</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="w-full px-4 mb-6 ml-auto md:w-1/2 lg:w-auto md:mb-0">
+                            <div class="inline-flex items-center w-full mb-4 md:w-auto md:mb-0 md:mr-10">
+                                <h4 class="mr-4 font-medium font-heading">Qty:</h4>
+                                <input
+                                    class="w-16 px-3 py-2 text-center text-gray-400 placeholder-gray-400 border-2 border-blue-400 outline-none bg-blue-50 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+                                    type="text" placeholder="1">
+                            </div>
+                            <span class="text-xl font-medium text-blue-500 font-heading">
+                                <span class="text-sm">$</span>
+                                <span>120.90</span>
+                            </span>
+                        </div>
+                        <button class="absolute top-0 right-0 text-gray-200 lg:mt-2 lg:-mr-4 hover:text-gray-300">
+                            <svg width="28" height="28" viewbox="0 0 28 28" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="27" height="27" rx="13.5" stroke="currentColor"></rect>
+                                <line x1="20.495" y1="8.49497" x2="8.49498" y2="20.495" stroke="currentColor"
+                                    stroke-width="1.4"></line>
+                                <line x1="19.505" y1="20.495" x2="7.50503" y2="8.49498" stroke="currentColor"
+                                    stroke-width="1.4"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:flex xl:items-center">
+                <div class="mb-10 xl:mb-0 lg:w-2/12 xl:w-1/12">
+                    <h3 class="text-xl font-medium font-heading">Cart totals</h3>
+                </div>
+                <div class="sm:flex sm:flex-wrap lg:justify-end lg:w-10/12 xl:w-11/12">
+                    <div class="w-full mb-6 sm:pr-3 lg:px-3 xl:mb-0 sm:w-1/2 lg:w-4/12 xl:w-3/12">
+                        <div
+                            class="relative flex items-center justify-between px-10 py-4 font-medium leading-8 bg-white bg-opacity-50 rounded-3xl">
+                            <div
+                                class="absolute flex items-center justify-center w-20 h-20 bg-white rounded-full left-3">
+                                <div
+                                    class="flex items-center justify-center text-xl font-bold text-white bg-blue-500 rounded-full w-11 h-11">
+                                    3</div>
+                            </div>
+                            <span class="ml-16">Products</span>
+                        </div>
+                    </div>
+                    <div class="w-full mb-3 sm:pl-3 lg:px-3 xl:mb-0 sm:w-1/2 lg:w-4/12 xl:w-3/12">
+                        <div
+                            class="flex items-center justify-between px-10 py-4 font-medium leading-8 bg-white bg-opacity-50 font-heading rounded-3xl">
+                            <span>Shipping</span>
+                            <span class="flex items-center">
+                                <span class="mr-3 text-sm">$</span>
+                                <span class="text-xl">10,00</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-full mb-10 sm:pr-3 lg:px-3 sm:mb-0 sm:w-1/2 lg:w-4/12 xl:w-3/12">
+                        <div
+                            class="flex items-center justify-between px-10 py-4 font-medium leading-8 bg-white font-heading rounded-3xl">
+                            <span>Total</span>
+                            <span class="flex items-center text-blue-500">
+                                <span class="mr-3 text-sm">$</span>
+                                <span class="text-xl">720,70</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="w-full sm:pl-3 sm:w-1/2 lg:max-w-max lg:ml-auto xl:ml-0"><a
+                            class="block w-full px-10 py-5 text-xl font-medium leading-6 tracking-tighter text-center text-white bg-blue-500 font-heading hover:bg-blue-600 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 rounded-xl"
+                            href="#">Checkout</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
